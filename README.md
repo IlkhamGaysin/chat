@@ -1,5 +1,13 @@
 # FS Chat
 
+## Project description
+
+Enjoy the simple way of communication.
+Communication between Web & iOS app has never been easier!
+
+Go for it!
+https://fs-chat.herokuapp.com
+
 ## Quick Start
 
 ```bash
