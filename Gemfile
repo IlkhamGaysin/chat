@@ -43,6 +43,7 @@ gem "responders"
 gem "rollbar"
 gem "seedbank"
 gem "stackprof"
+gem "redis"
 
 group :staging, :production do
   gem "newrelic_rpm"
