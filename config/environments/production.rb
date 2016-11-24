@@ -105,4 +105,7 @@ Rails.application.configure do
     logger.formatter = config.log_formatter
     config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
+
+  # Mount Action Cable outside main process or domain
+  config.action_cable.allowed_request_origins = ENV.fetch('ALLOWED_REQUEST_ORIGINS').split(',')
 end
