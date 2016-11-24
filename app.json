@@ -14,6 +14,7 @@
     "ALLOWED_CABLE_REQUEST_ORIGINS": { "required": true }
   },
   "addons": [
-    "heroku-postgresql"
+    "heroku-postgresql",
+    "redistogo"
   ]
 }
