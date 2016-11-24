@@ -44,5 +44,5 @@ Rails.application.configure do
   # Redirect logs to STDOUT
   config.logger = ActiveSupport::Logger.new(STDOUT)
 
-  config.action_cable.allowed_request_origins = ["http://lvh.me:5000", "http://localhost:5000"]
+  config.action_cable.allowed_request_origins = ENV.fetch('ALLOWED_CABLE_REQUEST_ORIGINS').split(',')
 end
