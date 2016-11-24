@@ -5,6 +5,9 @@ class RoomsController < ApplicationController
   expose :rooms, -> { Room.page(params[:page]) }
   expose :messages, from: :room
 
+  def index
+  end
+
   def new
   end
 
