@@ -45,5 +45,5 @@ Rails.application.configure do
   config.logger = ActiveSupport::Logger.new(STDOUT)
 
   # Mount Action Cable outside main process or domain
-  config.action_cable.allowed_request_origins = ENV.fetch('ALLOWED_REQUEST_ORIGINS').split(',')
+  config.action_cable.allowed_request_origins = ENV.fetch('ALLOWED_CABLE_REQUEST_ORIGINS').split(',')
 end
