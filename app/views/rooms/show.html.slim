@@ -1,0 +1,15 @@
+.show-item
+  .well.room.form-horizontal
+
+    .control-group
+      label.control-label
+        | Title
+      .controls
+        .input-xlarge.uneditable-input.string.span7
+          = room.title
+  .form-actions
+    = link_to(edit_room_path(room), class: 'btn btn-primary') do
+      i.fi-pencil
+      | Edit
+    '  or
+    = link_to 'Back', :back
