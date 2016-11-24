@@ -93,6 +93,7 @@ GEM
       execjs
       json
     concurrent-ruby (1.0.2)
+    connection_pool (2.2.1)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     css_parser (1.4.5)
@@ -226,6 +227,8 @@ GEM
       rack (>= 1.0.0, < 3)
     rack-mini-profiler (0.10.1)
       rack (>= 1.2.0)
+    rack-protection (1.5.3)
+      rack
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.0.0.1)
@@ -309,6 +312,11 @@ GEM
     seedbank (0.3.0)
     shoulda-matchers (3.1.1)
       activesupport (>= 4.0.0)
+    sidekiq (4.2.6)
+      concurrent-ruby (~> 1.0)
+      connection_pool (~> 2.2, >= 2.2.0)
+      rack-protection (>= 1.5.0)
+      redis (~> 3.2, >= 3.2.1)
     simple_form (3.2.1)
       actionpack (> 4, < 5.1)
       activemodel (> 4, < 5.1)
@@ -440,6 +448,7 @@ DEPENDENCIES
   scss_lint
   seedbank
   shoulda-matchers
+  sidekiq
   simple_form
   slim
   slim-rails
