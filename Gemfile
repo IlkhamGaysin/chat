@@ -45,7 +45,7 @@ gem "seedbank"
 gem "stackprof"
 
 # backgrounding
-gem "redis"
+gem "redis", "~>3.2"
 gem "sidekiq"
 
 group :staging, :production do

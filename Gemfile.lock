@@ -437,7 +437,7 @@ DEPENDENCIES
   rack-mini-profiler
   rails (= 5.0.0.1)
   rails-erd
-  redis
+  redis (~> 3.2)
   responders
   rollbar
   rspec-its
