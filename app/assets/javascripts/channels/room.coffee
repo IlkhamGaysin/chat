@@ -22,7 +22,7 @@ $ ->
       $textarea = $(this).find('#message_text')
       text = $textarea.val()
 
-      if text.length
+      if /\w/i.test(text)
         App.room.create_message text, room_id
         $textarea.val('')
 
