@@ -28,5 +28,5 @@ bin/server
 ## Scripts
 
 * `bin/setup` - setup required gems and migrate db if needed
-* `bin/quality` - run brakeman and rails_best_practices for the app
+* `bin/quality` - run brakeman
 * `bin/ci` - should be used in the CI to run specs
