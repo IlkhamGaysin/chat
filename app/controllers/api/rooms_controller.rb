@@ -11,5 +11,11 @@ module Api
       room.save
       respond_with room
     end
+
+    private
+
+    def room_params
+      params.require(:room).permit(:title)
+    end
   end
 end
