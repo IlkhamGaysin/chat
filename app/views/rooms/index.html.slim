@@ -3,16 +3,12 @@
     table.table.table-striped
       thead
         tr
-            th Title
-            th Actions
+          th Rooms
 
       - rooms.each do |room|
         tr
-          td= room.title
-          td.actions
-            = link_to(room, class: 'btn') do
-              i.fi-eye
-              |  Show
+          td
+            = link_to room.title, room
 
     .paginator
       = paginate(rooms)
