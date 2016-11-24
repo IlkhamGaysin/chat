@@ -1,3 +1,54 @@
 .container {
+  // padding-top: $global-padding;
+}
+.off-canvas {
+  height: 100%;
+  background-color: #232A32;
+  color: #C7C7C7;
   padding-top: $global-padding;
+  font-family: PT Sans Narrow;
+  padding-left: 26px;
+}
+.off-canvas-content {
+  padding-top: 26px;
+  height: 100%;
+  position: relative;
+}
+
+#logo{
+  padding-top: 10px;
+}
+
+#messages{
+  padding-bottom: 70px;
+}
+
+#message-form {
+  width: 100%;
+  background-color: #232A32;
+  display: block;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  input {
+    margin-top: 10px;
+    border: 2px solid #E8E8E8;
+    border-radius: 16px;
+  }
+}
+
+.message-box {
+  border-radius: 16px;
+  background-color: #E8E8E8;
+  height: 50px;
+}
+
+.box-text {
+  color: #FFFFFF;
+  line-height: 20px;
+  font-size: 16px;
+  font-family: "PT Sans";
+  height: 20px;
+  padding-top: 15px;
 }

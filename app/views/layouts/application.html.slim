@@ -18,13 +18,15 @@ html class="no-js" lang="en"
     == analytics_init if GA.tracker
 
   body
-    = render "navigation"
-    = render "messages"
-
-    main.container
-      = yield
-
-    = render "footer"
+    / = render "navigation"
+    / = render "messages"
+    main.container.off-canvas-wrapper
+      .off-canvas.position-left.reveal-for-large
+        #logo
+          = link_to image_tag("Logo.svg"), "#"
+        h6 Lorem ipsum
+      .off-canvas-content
+        = yield
 
     javascript:
       App.currentUserData = #{{current_user.to_json}};

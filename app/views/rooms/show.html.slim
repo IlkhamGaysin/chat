@@ -1,12 +1,9 @@
 .row
-  .columns
-    .show-item
-      h1 = room.title
-
+  .columns.medium-8
       #messages data={ room_id: room.id }
         = render messages
 
+#message-form
+  .row
+    .columns.medium-8
       = render 'messages/form'
-
-      .form-actions
-        = link_to 'Back', :back
