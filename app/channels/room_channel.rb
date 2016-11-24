@@ -10,17 +10,8 @@ class RoomChannel < ApplicationCable::Channel
   end
 
   def create_message(data)
-    text = data["text"]
-    room_id = data["room_id"]
+    Message.create(text: data["text"], room_id: data["room_id"])
 
-    message = Message.create(text: text, room_id: room_id)
-
-    ActionCable.server.broadcast "room_#{room_id}_channel", render_message(message)
-  end
-
-  private
-
-  def render_message(message)
-    ApplicationController.render partial: 'messages/message', locals: { message: message }
+    ActionCable.server.broadcast "room_#{data["room_id"]}_channel", data
   end
 end
