@@ -7,8 +7,9 @@ html class="no-js" lang="en"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
     meta name="robots" content="NOODP,NOYDIR"
 
-    = metamagic site: "RailsBase", title: %i(title site), separator: " - "
+    = metamagic site: "FS Chat", title: %i(title site), separator: " - "
     = csrf_meta_tags
+    = action_cable_meta_tag
 
     = stylesheet_link_tag :application
 
