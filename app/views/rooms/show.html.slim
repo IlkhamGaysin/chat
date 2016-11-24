@@ -1,10 +1,12 @@
-.show-item
-  h1 = room.title
+.row
+  .columns
+    .show-item
+      h1 = room.title
 
-  #messages data={ room_id: room.id }
-    = render messages
+      #messages data={ room_id: room.id }
+        = render messages
 
-  = render 'messages/form'
+      = render 'messages/form'
 
-  .form-actions
-    = link_to 'Back', :back
+      .form-actions
+        = link_to 'Back', :back

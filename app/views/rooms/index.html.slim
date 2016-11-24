@@ -1,23 +1,18 @@
-table.table.table-striped
-  thead
-    tr
-        th Title
-        th Actions
+.row
+  .columns
+    table.table.table-striped
+      thead
+        tr
+            th Title
+            th Actions
 
-  - rooms.each do |room|
-    tr
-      td= room.title
-      td.actions
-        = link_to(room, class: 'btn') do
-          i.fi-eye
-          |  Show
+      - rooms.each do |room|
+        tr
+          td= room.title
+          td.actions
+            = link_to(room, class: 'btn') do
+              i.fi-eye
+              |  Show
 
-.paginator
-  = paginate(rooms)
-
-br
-= link_to new_room_path, class: 'btn btn-primary' do
-  i.fi-plus
-  |  New Room
-
-
+    .paginator
+      = paginate(rooms)
