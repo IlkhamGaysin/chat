@@ -2,11 +2,10 @@
   overflow: hidden;
 
   .message-text {
-    float: left;
+    word-wrap: break-word;
   }
 
   .message-created-ago {
-    float: right;
     color: $medium-gray;
   }
 }
