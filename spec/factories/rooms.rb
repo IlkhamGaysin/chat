@@ -1,5 +1,5 @@
 FactoryGirl.define do
   factory :room do
-    title "MyString"
+    title { Faker::Name.title }
   end
 end
