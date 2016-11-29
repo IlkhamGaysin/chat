@@ -1,0 +1,12 @@
+.message-box {
+  overflow: hidden;
+
+  .message-text {
+    float: left;
+  }
+
+  .message-created-ago {
+    float: right;
+    color: $medium-gray;
+  }
+}

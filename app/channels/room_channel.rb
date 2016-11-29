@@ -10,8 +10,8 @@ class RoomChannel < ApplicationCable::Channel
   end
 
   def create_message(data)
-    Message.create(text: data["text"], room_id: data["room_id"])
+    message = Message.create(text: data["text"], room_id: data["room_id"])
 
-    ActionCable.server.broadcast "room_#{data["room_id"]}_channel", data
+    ActionCable.server.broadcast "room_#{data["room_id"]}_channel", serialized_resource(message)
   end
 end

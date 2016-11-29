@@ -2,8 +2,8 @@ class RoomsController < ApplicationController
   respond_to :html
 
   expose :room
-  expose :rooms, -> { Room.page(params[:page]) }
-  expose :messages, from: :room
+  expose :rooms
+  expose_decorated :messages, from: :room
 
   def index
   end

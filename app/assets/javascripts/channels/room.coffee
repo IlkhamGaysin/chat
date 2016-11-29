@@ -10,8 +10,8 @@ $ ->
       disconnected: ->
         # Called when the subscription has been terminated by the server
 
-      received: (data) ->
-        html = JST['message']({text: data["text"]})
+      received: (message) ->
+        html = JST['message']({ message: message })
         $messages.append(html)
 
       create_message: (text, room_id)->
