@@ -1,4 +1,13 @@
 .top-bar {
+  @include breakpoint(small medium large xlarge xxlarge) {
+    ul {
+      background-color: $black;
+      a {
+        color: $white;
+      }
+    }
+  }
+
   @include breakpoint(small only) {
     &-menu {
       flex-direction: column;
