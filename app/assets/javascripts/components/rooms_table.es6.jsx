@@ -1,11 +1,22 @@
 class RoomsTable extends React.Component {
-  renderItems () {
+  static propTypes() {
+    return {
+      rooms: React.PropTypes.arrayOf(
+        React.PropTypes.shape({
+          id: React.PropTypes.number.isRequired,
+          title: React.PropTypes.string.isRequired
+        })
+      )
+    }
+  }
+
+  renderItems() {
     const rooms = this.props.rooms
 
     return rooms.map((room) => <Room key={ room.id } room={ room } />)
   }
 
-  render () {
+  render() {
     return (
      <div className="row">
         <div className="columns">
