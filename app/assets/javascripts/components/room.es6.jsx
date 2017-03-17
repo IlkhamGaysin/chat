@@ -1,5 +1,14 @@
 class Room extends React.Component {
-  render () {
+  static propTypes() {
+    return {
+      room: React.PropTypes.shape({
+        id: React.PropTypes.number.isRequired,
+        title: React.PropTypes.string.isRequired
+      })
+    }
+  }
+
+  render() {
     return (
       <tr>
         <td>
