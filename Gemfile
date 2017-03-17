@@ -46,6 +46,7 @@ gem "seedbank"
 gem "stackprof"
 gem "react-rails"
 gem "factory_girl_rails"
+gem "faker"
 
 # backgrounding
 gem "redis", "~>3.2"
@@ -75,7 +76,6 @@ group :development, :test do
   gem "byebug"
   gem "coffeelint"
   gem "dotenv-rails"
-  gem "faker"
   gem "jasmine", "> 2.0"
   gem "jasmine-jquery-rails"
   gem "pry-rails"
