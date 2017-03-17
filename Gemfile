@@ -44,6 +44,7 @@ gem "responders"
 gem "rollbar"
 gem "seedbank"
 gem "stackprof"
+gem "react-rails"
 
 # backgrounding
 gem "redis", "~>3.2"

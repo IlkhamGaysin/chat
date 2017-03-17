@@ -10,6 +10,11 @@
 #= require current_user
 #= require jade/runtime
 #= require_tree ../templates
+
+#= require react
+#= require react_ujs
+#= require components
+
 #= require_tree .
 
 $(document).foundation()

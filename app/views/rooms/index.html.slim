@@ -1,11 +1,1 @@
-.row
-  .columns
-    table.table.table-striped
-      thead
-        tr
-          th Rooms
-
-      - rooms.each do |room|
-        tr
-          td
-            = link_to room.title, room
+= react_component('RoomsTable', { rooms: rooms })
